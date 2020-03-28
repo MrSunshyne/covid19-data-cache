@@ -30,10 +30,10 @@ jobs:
         # location and filename
         file: actions/data.json
 
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1.0.0
+    - name: Download artifact
+      uses: actions/download-artifact@v1.0.0
       with:
         # Artifact name
-        name: uplodatron
-        # Directory containing files to upload
-        path: actions
+        name: downloadatron
+        # Destination path
+        path: actions # optional
