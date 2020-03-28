@@ -29,3 +29,11 @@ jobs:
         url: https://besafemoris.mu/wp-json/wp/v2/getLocalCases
         # location and filename
         file: actions/data.json
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: uplodatron
+        # Directory containing files to upload
+        path: actions
