@@ -47,6 +47,9 @@ jobs:
         workflow: workflowname
         # Repository name with owner (like actions/checkout)
         repo: ${{github.repository}} # optional, default is 
+        pr: pr # optional
+        # Commit SHA1
+        commit: commit # optional
         # Artifact name
         name: downloadatron
         # Where to unpack the artifact
