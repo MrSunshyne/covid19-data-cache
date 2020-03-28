@@ -47,7 +47,7 @@ jobs:
         workflow: workflowname
         # Repository name with owner (like actions/checkout)
         repo: ${{github.repository}} # optional, default is 
-        pr: pr # optional
+        pr: 1 # optional
         # Commit SHA1
         commit: commit # optional
         # Artifact name
