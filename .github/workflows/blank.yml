@@ -38,11 +38,16 @@ jobs:
         # Directory containing files to upload
         path: actions    
 
-
-    - name: Download artifact
-      uses: actions/download-artifact@v1.0.0
+    - name: Download workflow artifact
+      uses: dawidd6/action-download-artifact@v2.4.0
       with:
+        # Github token
+        github_token:  ${{github.token}} # optional, default is ${{github.token}}
+        # Workflow name
+        workflow: workflowname
+        # Repository name with owner (like actions/checkout)
+        repo: ${{github.repository}} # optional, default is 
         # Artifact name
         name: downloadatron
-        # Destination path
-        path: actions # optional
+        # Where to unpack the artifact
+        path: ${{github.workspace}} # optional, default is
